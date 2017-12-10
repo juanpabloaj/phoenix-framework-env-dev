@@ -11,3 +11,7 @@ RUN chmod 0440 /etc/sudoers.d/phoe
 
 USER phoe
 WORKDIR /home/phoe
+
+RUN mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+RUN mix local.hex --force \
+    && mix local.rebar --force
