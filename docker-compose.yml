@@ -2,3 +2,8 @@ version: '3'
 services:
   phoenix:
     build: .
+    volumes:
+        - home:/home/phoe
+
+volumes:
+    home:
