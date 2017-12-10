@@ -5,9 +5,6 @@ RUN apt-get install -y sudo
 RUN apt-get install -y postgresql-client
 RUN apt-get install -y vim
 
-# put in a separated container
-RUN apt-get install -y postgresql postgresql-contrib
-
 RUN useradd -m phoe && adduser phoe sudo
 RUN echo "phoe ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/phoe
 RUN chmod 0440 /etc/sudoers.d/phoe
