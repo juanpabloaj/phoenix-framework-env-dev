@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get install -y sudo
 RUN apt-get install -y postgresql-client
 RUN apt-get install -y vim
+RUN apt-get install -y inotify-tools
 
 RUN useradd -m phoe && adduser phoe sudo
 RUN echo "phoe ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/phoe
