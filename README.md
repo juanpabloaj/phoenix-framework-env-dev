@@ -2,4 +2,4 @@
 
 Docker up
 
-    docker-compose run phoenix
+    docker-compose run --service-ports phoenix

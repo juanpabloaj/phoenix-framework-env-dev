@@ -2,6 +2,8 @@ version: '3'
 services:
   phoenix:
     build: .
+    ports:
+        - "4000:4000"
     volumes:
         - home:/home/phoe
 
